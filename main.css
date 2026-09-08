@@ -63,15 +63,12 @@ a {
 .star-icon {
   position: absolute;
   z-index: 3; /* put .star-icon above .earth-icon and .dashed-box */
-  background: gold;
-  width: 80%;
-  left: 60px;
-  top: 3em;
+  content: url("star.png");
 }
 
 
 .earth-icon {
-  //position: absolute;
+  position: relative;
   z-index: 2; /* put .earth-icon above .dashed-box */
   content: url("Earth.png");
 }
