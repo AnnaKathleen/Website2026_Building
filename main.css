@@ -16,8 +16,8 @@ body {
 }
 
 a {
-  //color: #204156;
-  color: red;
+  color: #204156;
+  //color: red;
   text-decoration: none;
 }
 
@@ -47,6 +47,37 @@ a {
 .gallery-item .thumbnail {
   border: 5px solid #fff;
 }
+
+.wrapper {
+  position: relative;
+}
+
+.dashed-box {
+  position: relative;
+  z-index: 1;
+  border: dashed;
+  height: 8em;
+  margin-bottom: 1em;
+  margin-top: 2em;
+}
+.star-icon {
+  position: absolute;
+  z-index: 3; /* put .star-icon above .earth-icon and .dashed-box */
+  background: gold;
+  width: 80%;
+  left: 60px;
+  top: 3em;
+}
+
+
+.earth-icon {
+  //position: absolute;
+  z-index: 2; /* put .earth-icon above .dashed-box */
+  content: url("Earth.png");
+}
+
+
+
 
 /* FOOTER NAVIGATION */
 
