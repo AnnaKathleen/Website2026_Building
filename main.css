@@ -17,7 +17,6 @@ body {
 
 a {
   color: #204156;
-  //color: red;
   text-decoration: none;
 }
 
@@ -49,31 +48,33 @@ a {
 }
 
 .wrapper {
-  position: relative;
+    position: relative;
+    width: 700px;
+    margin: 0 auto;
 }
 
-.dashed-box {
-  position: relative;
-  z-index: 1;
-  border: dashed;
-  height: 8em;
-  margin-bottom: 1em;
-  margin-top: 2em;
+.earth-icon img {
+    width: 600px;
+    height: auto;
+    display: block;
+/*border: 2px solid green;*/
 }
+
 .star-icon {
-  position: absolute;
-  z-index: 3; /* put .star-icon above .earth-icon and .dashed-box */
-  content: url("star.png");
+    position: absolute;
+    z-index: 3;
+    display: inline-block;
+    overflow: hidden;
+    line-height: 0;
+    top: 150px;
+    left: 205px;
+/*border: 2px solid red;*/
 }
 
-
-.earth-icon {
-  position: relative;
-  z-index: 2; /* put .earth-icon above .dashed-box */
-  content: url("Earth.png");
+.star-icon img {
+    display: block;
+    width: 60px;
 }
-
-
 
 
 /* FOOTER NAVIGATION */
